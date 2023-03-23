@@ -47,30 +47,14 @@
           <div class="row">
             <div class="col-lg-8">
               <h2 class="portfolio-title">
-                This is an example of portfolio detail
+                <!-- On Load Dynamic Render -->
               </h2>
 
               <div class="portfolio-details-slider swiper">
                 <div class="swiper-wrapper align-items-center">
+                  <!-- On Load Dynamic Render -->
                   <div class="swiper-slide">
-                    <img
-                      src="assets/img/portfolio/portfolio-details-1.jpg"
-                      alt=""
-                    />
-                  </div>
-
-                  <div class="swiper-slide">
-                    <img
-                      src="assets/img/portfolio/portfolio-details-2.jpg"
-                      alt=""
-                    />
-                  </div>
-
-                  <div class="swiper-slide">
-                    <img
-                      src="assets/img/portfolio/portfolio-details-3.jpg"
-                      alt=""
-                    />
+                    <img src="assets/img/portfolio/telemedicine-1.png" alt="" />
                   </div>
                 </div>
                 <div class="swiper-pagination"></div>
@@ -79,22 +63,32 @@
 
             <div class="col-lg-4 portfolio-info">
               <h3>Project information</h3>
-              <ul>
-                <li><strong>Category</strong>: Web design</li>
-                <li><strong>Client</strong>: ASU Company</li>
-                <li><strong>Project date</strong>: 01 March, 2020</li>
+              <ul class="project-info">
+                <!-- On Load Dynamic Render -->
                 <li>
-                  <strong>Project URL</strong>: <a href="#">www.example.com</a>
+                  <strong>Category:</strong>
+                  <p class="category"></p>
+                </li>
+                <li>
+                  <strong>Domain:</strong>
+                  <p class="domain"></p>
+                </li>
+                <li>
+                  <strong>Project Date:</strong>
+                  <p class="date"></p>
+                </li>
+                <li>
+                  <strong>Source Code:</strong
+                  ><a target="_new" class="source-code" href=""></a>
+                </li>
+                <li>
+                  <strong>Live At:</strong>
+                  <a target="_new" class="live-url" href=""></a>
                 </li>
               </ul>
 
-              <p>
-                Autem ipsum nam porro corporis rerum. Quis eos dolorem eos
-                itaque inventore commodi labore quia quia. Exercitationem
-                repudiandae officiis neque suscipit non officia eaque itaque
-                enim. Voluptatem officia accusantium nesciunt est omnis tempora
-                consectetur dignissimos. Sequi nulla at esse enim cum deserunt
-                eius.
+              <p class="project-description">
+                <!-- On Load Dynamic Render -->
               </p>
             </div>
           </div>
@@ -112,6 +106,7 @@
     <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
     <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
     <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script type="module" src="/assets/js/project-details.js"></script>
 
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>

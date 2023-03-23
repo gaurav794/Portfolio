@@ -973,6 +973,21 @@ section .container {
   margin-top: 10px;
 }
 
+.portfolio-details .portfolio-info ul li {
+  display: flex;
+}
+
+.portfolio-details .portfolio-info ul li p {
+  margin: 0 1rem;
+  padding: 0;
+}
+
+.portfolio-details .portfolio-info ul li p,
+.portfolio-details .portfolio-info ul li a {
+  margin: 0 1rem;
+  padding: 0;
+}
+
 .portfolio-details .portfolio-info p {
   font-size: 15px;
   padding: 15px 0 0 0;
