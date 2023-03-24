@@ -20,32 +20,39 @@ h2.innerHTML = projectDetail.title;
                     <img src="assets/img/portfolio/telemedicine-2.png" alt="" />
                   </div>*/
 let div_swiper_wrapper = document.querySelector(".swiper-wrapper");
-
+let htmlElements = "";
 //create swiper slides dom until no. of images in the obj
 //Skipping 1st index as it contains thumbnail
 for (let i = 1; i < projectDetail.images.length; i++) {
-  //   create div tag with class swiper-slide
-  let div_swiper_slide = document.createElement("div");
-  div_swiper_slide.classList.add("swiper-slide");
-  //   //add div_swiper_slide element to swiper-wrapper
-  div_swiper_wrapper.append(div_swiper_slide);
-  //create img tag and add to class swiper-slide
-  let img = document.createElement("img");
-  img.setAttribute("src", projectDetail?.images[i] || default_url);
-  img.setAttribute("alt", "");
-  div_swiper_slide.appendChild(img);
+  htmlElements += `<div class="swiper-slide">
+  <img src=${projectDetail.images[i]} alt="" />
+</div>`;
 }
+div_swiper_wrapper.innerHTML = htmlElements;
 
+let div_portfolio_info = document.querySelector(".portfolio-info");
 //update div with class project-info values
-document.querySelector(".category").innerHTML = projectDetail.category;
-document.querySelector(".domain").innerHTML = projectDetail.domain;
-document.querySelector(".date").innerHTML = projectDetail.date;
-let a_code = document.querySelector(".source-code");
-a_code.setAttribute("href", projectDetail.sourceCode);
-a_code.innerHTML = projectDetail.sourceCode;
-let a_liveURL = document.querySelector(".live-url");
-a_liveURL.setAttribute("href", projectDetail.liveURL);
-a_liveURL.innerHTML = projectDetail.liveURL;
+let htmlElement = `<h3>Project information</h3>
+<ul class="project-info">
+  <li>
+    <strong>Category:</strong> ${projectDetail.category}
+  </li>
+  <li>
+    <strong>Domain:</strong> ${projectDetail.domain}
+  </li>
+  <li>
+    <strong>Project Date:</strong> ${projectDetail.date}
+  </li>
+  <li>
+    <strong>Source Code:</strong
+    ><a target="_blank" href=${projectDetail.sourceCode}>${projectDetail.sourceCode}</a>
+  </li>
+  <li>
+    <strong>Live At:</strong>
+    <a target="_blank" href=${projectDetail.liveURL}> ${projectDetail.liveURL}</a>
+  </li>
+</ul>
 
-document.querySelector(".project-description").innerHTML =
-  projectDetail.description;
+<p class="project-description"></p>`;
+
+div_portfolio_info.innerHTML = htmlElement;

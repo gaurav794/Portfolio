@@ -358,6 +358,7 @@ section.section-show {
 section .container {
   background: rgba(0, 0, 0, 0.9);
   padding: 30px;
+  min-height: 80vh;
 }
 
 @media (max-width: 768px) {
@@ -977,15 +978,8 @@ section .container {
   display: flex;
 }
 
-.portfolio-details .portfolio-info ul li p {
+.portfolio-details .portfolio-info ul li strong {
   margin: 0 1rem;
-  padding: 0;
-}
-
-.portfolio-details .portfolio-info ul li p,
-.portfolio-details .portfolio-info ul li a {
-  margin: 0 1rem;
-  padding: 0;
 }
 
 .portfolio-details .portfolio-info p {
