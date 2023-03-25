@@ -33,26 +33,49 @@ div_swiper_wrapper.innerHTML = htmlElements;
 let div_portfolio_info = document.querySelector(".portfolio-info");
 //update div with class project-info values
 let htmlElement = `<h3>Project information</h3>
-<ul class="project-info">
+<div class="project-info">
+<div class="list">
+<ul>
   <li>
-    <strong>Category:</strong> ${projectDetail.category}
+    <strong>Category:</strong>
   </li>
   <li>
-    <strong>Domain:</strong> ${projectDetail.domain}
+    <strong>Domain:</strong>
   </li>
   <li>
-    <strong>Project Date:</strong> ${projectDetail.date}
+    <strong>Project Date:</strong>
   </li>
   <li>
     <strong>Source Code:</strong
-    ><a target="_blank" href=${projectDetail.sourceCode}>${projectDetail.sourceCode}</a>
+    >
   </li>
   <li>
     <strong>Live At:</strong>
-    <a target="_blank" href=${projectDetail.liveURL}> ${projectDetail.liveURL}</a>
   </li>
+  </ul>
+</div>
+<div class="list">
+<ul>
+    <li>${projectDetail.category}</li>
+    <li>${projectDetail.domain}</li>
+    <li>${projectDetail.date}</li>
+    <li>
+    <a target="_blank" href=${projectDetail?.sourceCode || "#"}>${
+  projectDetail?.sourceCode || "N/A"
+}
+    </a>
+    </li>
+    <li>
+      <a target="_blank" href=${projectDetail?.liveURL || "#"}> ${
+  projectDetail?.liveURL || "N/A"
+}</a>
+    </li>
 </ul>
+</div> `;
 
-<p class="project-description"></p>`;
+let p = document.createElement("p");
+p.classList.add("project-description");
+p.innerText = projectDetail.description;
 
 div_portfolio_info.innerHTML = htmlElement;
+div_portfolio_info.append(p);

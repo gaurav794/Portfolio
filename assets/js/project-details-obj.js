@@ -1,7 +1,7 @@
 export let projectDetailsObj = [
   {
     id: 1,
-    title: "Telemedicine Application",
+    title: "Telemedicine Mobile Application",
     category: "Android",
     domain: "Healthcare",
     date: "December 2021",
@@ -31,6 +31,11 @@ export let projectDetailsObj = [
       "assets/img/portfolio/school-community-2.png",
       "assets/img/portfolio/school-community-3.png",
       "assets/img/portfolio/school-community-4.png",
+      "assets/img/portfolio/school-community-5.png",
+      "assets/img/portfolio/school-community-6.png",
+      "assets/img/portfolio/school-community-7.png",
+      "assets/img/portfolio/school-community-8.png",
+      "assets/img/portfolio/school-community-9.png",
     ],
   },
   {
@@ -48,6 +53,13 @@ export let projectDetailsObj = [
       "assets/img/portfolio/windows-mockup-1.png",
       "assets/img/portfolio/windows-mockup-2.png",
       "assets/img/portfolio/windows-mockup-3.png",
+      "assets/img/portfolio/windows-mockup-4.png",
+      "assets/img/portfolio/windows-mockup-5.png",
+      "assets/img/portfolio/windows-mockup-6.png",
+      "assets/img/portfolio/windows-mockup-7.png",
+      "assets/img/portfolio/windows-mockup-8.png",
+      "assets/img/portfolio/windows-mockup-9.png",
+      "assets/img/portfolio/windows-mockup-10.png",
     ],
   },
   {
@@ -69,6 +81,7 @@ export let projectDetailsObj = [
       "assets/img/portfolio/employee-5.png",
       "assets/img/portfolio/employee-6.png",
       "assets/img/portfolio/employee-7.png",
+      "assets/img/portfolio/employee-8.png",
     ],
   },
   {
@@ -81,8 +94,11 @@ export let projectDetailsObj = [
     liveURL: "",
     description:
       "Full Stack application which manages sprite's x and y coordinates and its location in a plane and performs CRUD operations using web pages and RESTful HTTP APIs. Using JavaFX application, generate new sprites on click event, show live location and movements of sprites  in a plane.",
-    images: [],
-    //todo:
+    images: [
+      "assets/img/portfolio/sprite-thumbnail.png",
+      "https://docs.aws.amazon.com/images/whitepapers/latest/serverless-multi-tier-architectures-api-gateway-lambda/images/image2.png",
+      "https://i.stack.imgur.com/WsPCT.png",
+    ],
   },
   {
     id: 6,
@@ -99,6 +115,22 @@ export let projectDetailsObj = [
       "assets/img/portfolio/portfolio-1.png",
       "assets/img/portfolio/portfolio-2.png",
       "assets/img/portfolio/portfolio-3.png",
+    ],
+  },
+  {
+    id: 7,
+    title: "SpringBoot Rest Application",
+    category: "Backend",
+    domain: "Software Development",
+    date: "August 2022",
+    sourceCode: "https://github.com/gaurav794/SpringBoot-Rest-Application",
+    liveURL: "",
+    description:
+      "SpringBoot application which handles user requests and performs CRUD operations by using api calls without the interaction of the front-end and provides json result in response.",
+    images: [
+      "assets/img/portfolio/springboot-rest-thumbnail.png",
+      "https://5.imimg.com/data5/CO/RG/WK/GLADMIN-14526645/selection-036-500x500.png",
+      "https://www.split.io/wp-content/uploads/2020/07/blog-Blue-spring_angular.png",
     ],
   },
 ];
