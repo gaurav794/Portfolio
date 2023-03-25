@@ -358,6 +358,7 @@ section.section-show {
 section .container {
   background: rgba(0, 0, 0, 0.9);
   padding: 30px;
+  min-height: 80vh;
 }
 
 @media (max-width: 768px) {
@@ -777,6 +778,15 @@ section .container {
   margin-bottom: 30px;
 }
 
+.img-fluid {
+  min-width: 404px;
+  min-height: 269px;
+  max-width: 404px;
+  max-height: 269px;
+  object-fit: cover;
+  opacity: 0.9;
+}
+
 .portfolio #portfolio-flters {
   padding: 0;
   margin: 0 auto 15px auto;
@@ -845,6 +855,11 @@ section .container {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.project-info {
+  display: flex;
+  overflow: hidden;
 }
 
 .portfolio .portfolio-wrap .portfolio-info::before {
@@ -969,8 +984,17 @@ section .container {
   font-size: 15px;
 }
 
-.portfolio-details .portfolio-info ul li + li {
+.portfolio-details .portfolio-info .project-info .list ul li + li {
   margin-top: 10px;
+}
+
+.portfolio-details .portfolio-info .project-info .list ul li {
+  display: flex;
+}
+
+.portfolio-details .portfolio-info .project-info .list ul li strong {
+  margin: 0 1rem;
+  white-space: nowrap;
 }
 
 .portfolio-details .portfolio-info p {
@@ -987,6 +1011,14 @@ section .container {
 .portfolio-details .swiper-pagination {
   margin-top: 20px;
   position: relative;
+}
+
+.swiper-slide img {
+  min-width: 800px;
+  min-height: 463px;
+  max-width: 800px;
+  max-height: 463px;
+  object-fit: scale-down;
 }
 
 .portfolio-details .swiper-pagination .swiper-pagination-bullet {
