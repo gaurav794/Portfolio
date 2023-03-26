@@ -1,11 +1,3 @@
-/**
-* Template Name: Personal
-* Updated: Mar 10 2023 with Bootstrap v5.2.3
-* Template URL: https://bootstrapmade.com/personal-free-resume-bootstrap-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -28,6 +20,11 @@ body::before {
   top: 0;
   height: 100vh;
   z-index: -1;
+}
+
+::selection {
+  color: rgba(0, 0, 0, 0.9);
+  background: #18d26e;
 }
 
 @media (min-width: 1024px) {
@@ -393,8 +390,7 @@ section .container {
 }
 
 .section-title p {
-  margin: 0;
-  margin: -15px 0 15px 0;
+  margin-right: 2rem;
   font-size: 36px;
   font-weight: 700;
   text-transform: uppercase;
@@ -636,6 +632,93 @@ section .container {
 /*--------------------------------------------------------------
 # Resume
 --------------------------------------------------------------*/
+
+.resume .container .section-title div {
+  display: flex;
+  align-items: stretch;
+}
+
+/* Download Button */
+.resume .container .section-title a {
+  background: #ffffff;
+  border: solid 1px #e6e6e6;
+  border-radius: 2px;
+  display: inline-block;
+  height: 3rem;
+  line-height: 45px;
+  position: relative;
+  text-align: center;
+  vertical-align: middle;
+  width: 4rem;
+}
+
+.resume .container .section-title a span {
+  background: #f2594b;
+  border-radius: 4px;
+  color: #ffffff;
+  display: inline-block;
+  font-size: 9px;
+  font-weight: 700;
+  line-height: normal;
+  padding: 5px 10px;
+  position: relative;
+  text-transform: uppercase;
+  z-index: 1;
+}
+
+.resume .container .section-title a span:last-child {
+  margin-left: -20px;
+}
+
+.resume .container .section-title a:before,
+.resume .container .section-title a:after {
+  background: #ffffff;
+  border: solid 3px #9fb4cc;
+  border-radius: 4px;
+  content: "";
+  display: block;
+  height: 35px;
+  left: 50%;
+  margin: -16px 0 0 -12px;
+  position: absolute;
+  top: 50%;
+  width: 25px;
+}
+
+.resume .container .section-title a:hover:before,
+.resume .container .section-title a:hover:after {
+  background: #e2e8f0;
+}
+/*.resume .container .section-title a:before{transform:translate(-30%,-60%);}*/
+
+.resume .container .section-title a:before {
+  margin: -21px 0 0 -5px;
+}
+
+.resume .container .section-title a:hover {
+  background: #e2e8f0;
+  border-color: #9fb4cc;
+}
+
+.resume .container .section-title a:active {
+  background: #dae0e8;
+  box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+.resume .container .section-title a span:first-child {
+  display: none;
+}
+
+.resume .container .section-title a:hover span:first-child {
+  display: inline-block;
+  margin-left: -20px;
+}
+
+.resume .container .section-title a:hover span:last-child {
+  display: none;
+}
+/* Download Button */
+
 .resume .resume-title {
   font-size: 26px;
   font-weight: 700;
