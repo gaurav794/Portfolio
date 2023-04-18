@@ -25,7 +25,7 @@ let htmlElements = "";
 //Skipping 1st index as it contains thumbnail
 for (let i = 1; i < projectDetail.images.length; i++) {
   htmlElements += `<div class="swiper-slide">
-  <img src=${projectDetail.images[i]} alt="" />
+  <img src=${projectDetail.images[i]} loading="lazy" alt="" />
 </div>`;
 }
 div_swiper_wrapper.innerHTML = htmlElements;

@@ -15,7 +15,7 @@ for (let i = 0; i < projectDetails.length; i++) {
     projectDetails[i].category
   }"><div class="portfolio-wrap"><img src=${
     projectDetails[i]?.images[0] || default_url
-  } class="img-fluid" alt=""><div class="portfolio-info"><h4>${
+  } class="img-fluid" loading="lazy" alt=""><div class="portfolio-info"><h4>${
     projectDetails[i].title
   }</h4><div class="portfolio-links glightbox"><a href="portfolio-details.html?${i}" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title=${
     projectDetails[i].title
